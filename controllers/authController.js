@@ -12,7 +12,7 @@ const Seller = require("../models/seller");
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key: process.env.SENDGRID_KEY,
+      api_key:"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",
     },
   })
 );
@@ -71,7 +71,7 @@ exports.signupUser = (req, res, next) => {
         subject: "Verify your Account on FoodHub",
         html: `
                       <p>Please verify your email by clicking on the link below - FoodHub</p>
-                      <p>Click this <a href="http://localhost:3002/auth/verify/${token}">link</a> to verify your account.</p>
+                      <p>Click this <a href="https://foodhubdelivery.herokuapp.com/auth/verify/${token}">link</a> to verify your account.</p>
                     `,
       });
       res.status(201).json({
@@ -244,7 +244,7 @@ exports.signupSeller = (req, res, next) => {
         html: `<div>  
         <h1> Hi Welcome To FoodHub </h1>
                       <p>Please verify your email by clicking on the link below - FoodHub</p>
-                      <p>Click this   <a href="http://localhost:3002/auth/verify/${token}">link</a> to verify your account.</p>
+                      <p>Click this   <a href="https://foodhubdelivery.herokuapp.com/auth/verify/${token}">link</a> to verify your account.</p>
                       </div>
                     `,
       });
