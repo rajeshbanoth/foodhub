@@ -69,6 +69,9 @@ app.use((error, req, res, next) => {
   });
 });
 
+app.get("/", (req, res) => {
+  res.send("hasi");
+});
 const clients = {};
 
 const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.4ho5g.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`;
