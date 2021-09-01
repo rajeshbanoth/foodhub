@@ -12,7 +12,7 @@ const Seller = require("../models/seller");
 const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
-      api_key:"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",
+      api_key:"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",
     },
   })
 );
