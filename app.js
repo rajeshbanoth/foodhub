@@ -80,7 +80,7 @@ mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
     console.log("Connected to db");
-    const server = app.listen(process.env.PORT || 3002);
+    const server = app.listen(process.env.PORT || 5000);
     const io = require("./util/socket").init(server);
     io.on("connection", (socket) => {
       socket.on("add-user", (data) => {
