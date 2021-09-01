@@ -74,7 +74,7 @@ app.get("/test", (req, res) => {
 });
 const clients = {};
 
-const uri = `mongodb+srv://root:raji8897@cluster0.4ho5g.mongodb.net/foodApplication?retryWrites=true&w=majority`;
+const uri = "mongodb+srv://root:raji8897@cluster0.4ho5g.mongodb.net/foodApplication?retryWrites=true&w=majority"; 
 
 mongoose
   .connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
