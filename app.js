@@ -69,7 +69,7 @@ app.use((error, req, res, next) => {
   });
 });
 
-app.get("/", (req, res) => {
+app.get("/test", (req, res) => {
   res.send("hasi");
 });
 const clients = {};
